@@ -1,6 +1,28 @@
 body {
 background-image: url("images/fondo.jpg");
 }
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
 h1 {
 color: red;
 }
