@@ -2,3 +2,7 @@ body {
 background-image: url("wood.jpg");
 text-align: center;
 }
+header{
+  height: 200px;
+  background-image: url("iron.png");
+}
