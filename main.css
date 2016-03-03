@@ -4,7 +4,7 @@ text-align: center;
 }
 header{
   height: 200px;
-  background-image: url("iron.png");
+  background-image: url("iron.png") width 100%;
   width: 100%;
   z-index: 10;
 }
