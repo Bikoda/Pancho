@@ -5,4 +5,5 @@ text-align: center;
 header{
   height: 200px;
   background-image: url("iron.png");
+  width: 100%;
 }
