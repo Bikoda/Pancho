@@ -7,3 +7,6 @@ header {
   width: 100%;
   z-index: 10;
 }
+.grid {
+  float: right;
+}
