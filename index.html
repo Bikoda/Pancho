@@ -5,45 +5,71 @@
     <title>Document</title>
 	<meta name="viweport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="col-md-4">
-            <ul>
-                <button class="btn btn-primary">User List</button>
-                <button class="btn btn-primary">User Profile</button>
-                <button class="btn btn-primary">Statistics</button>
-                <button class="btn btn-primary">Contacts</button>
-                <div class="form-group">                
-            </ul>
-        </div>        
-        <div class="col-md-4">
-            <imput class="form-control" id="search" type="text" placeholder="search:">Search:</imput>
-            <span class="glyphicon glyphicon-search"></span>                     
+            <div class="dropdown">
+                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User List<span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li><a href="#">opcion#1</a></li>
+                        <li><a href="#">opcion#2</a></li>
+                        <li><a href="#">opcion#3</a></li>
+                    </ul>
+                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User Profile<span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li><a href="#">opcion#1</a></li>
+                        <li><a href="#">opcion#2</a></li>
+                        <li><a href="#">opcion#3</a></li>
+                    </ul>    
+                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Statistics<span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li><a href="#">opcion#1</a></li>
+                        <li><a href="#">opcion#2</a></li>
+                        <li><a href="#">opcion#3</a></li>
+                    </ul>    
+                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Contacts<span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        <li><a href="#">opcion#1</a></li>
+                        <li><a href="#">opcion#2</a></li>
+                        <li><a href="#">opcion#3</a></li>
+                    </ul>
+        </div>            
+        <div class="col-md-4">            
+            <div class="form-group">
+                <input class="form-control" id="search" type="text" placeholder="search:"><span class="glyphicon glyphicon-search float-right"></span></input>
+            </div>  
+                           
         </div>
         <div class="col-md-4"></div>
     </header>
     <br> 
     <div class="row">
         <div class="col-md-12">
-            <ul>
-                <a href="" class="line"><p>Overview</p></a>
-                <a href=""><p>Account</p></a>
-                <a href=""><p>Projects</p></a>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Overview</a></li>
+                <li class="active"><a href="#">Account</a></li>
+                <li class="active"><a href="#">Projects</a></li>
             </ul>
         </div>    
+    </div>    
         <br>        
        <div class="row">
         <div class="col-md-3">
-            <div class="img-thumbnail">
-                <img href="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/11836711_10205499410258627_6260687797201019382_n.jpg?oh=42d4913e72284e7ece4d7620ba60833f&oe=57977570&__gda__=1469394357_15e6ab524460f7c81a946ba66bb8bb01" class="img-responsive">
-                <ul>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-briefcase">Projects</span></button>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-envelope">Messages</span></button>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-user">Friends</span></button>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-cog">settings</span></button>
-                </ul>    
-            </div>    
+            <div class="col-md-offset-1">
+                <div class="img-thumbnail">
+                    <img src="profile.jpg" class="pic img-rounded"/>
+                    <ul>
+                    <br>
+                        <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-briefcase"> Projects</span></button>
+                        <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"> Messages</span></button>
+                        <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Friends</span></button>
+                        <button class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></button>
+                    </ul>    
+                </div>
+            </div>     
+        </div>       
         <div class="col-md-6">
             <h3>Juan Francisco Maggi</h3>
             <p>lorem ipsum dolor sit amet, consectetur sdipisicing elit, sed do siusmod
@@ -55,10 +81,12 @@
             </p>
         </div>
         <div class="col-md-3">
-            <h4>Sales Summary</h4>
-            <h6>Today Sold</h6>
-            <h6>Weekly Sales</h6>
-            <h6>Total Sold</h6>
+            <div class="color1 container">
+                <h4>Sales Summary</h4>
+                <h6>Today Sold</h6>
+                <h6>Weekly Sales</h6>
+                <h6>Total Sold</h6>
+            </div>               
         </div>           
     </span>    
 
