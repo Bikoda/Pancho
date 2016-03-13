@@ -1,4 +1,3 @@
-
 header {
 	background:#3e3a3a;
 	color:#fff;
@@ -25,4 +24,14 @@ header {
 .imgy {
 	width:30px;
 	height:30px;
+}
+.square {
+	width:200px;
+}
+.blok {
+	width:210px;
+}
+ul
+{
+    list-style-type: none;
 }
