@@ -3,6 +3,13 @@ header {
 	background: #3e3a3a;
 	color: #fff;
 }
+
+footer {
+	background: #3e3a3a;
+	color: #fff;
+}
+
+}
 .line {
 	display:inline;
 }
