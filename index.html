@@ -5,52 +5,53 @@
     <title>Document</title>
 	<meta name="viweport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="col-md-4">
-            <div class="dropdown">
-                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User List<span class="caret"></span></button>
+        <div class ="row" style="display: inline;">
+            <div class="col-md-4">
+                <div class="dropdown">
+                <button class="bot btn" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User List</button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a href="#">opcion#1</a></li>
                         <li><a href="#">opcion#2</a></li>
                         <li><a href="#">opcion#3</a></li>
                     </ul>
-                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User Profile<span class="caret"></span></button>
+                <button class="bot btn" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">User Profile</button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a href="#">opcion#1</a></li>
                         <li><a href="#">opcion#2</a></li>
                         <li><a href="#">opcion#3</a></li>
                     </ul>    
-                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Statistics<span class="caret"></span></button>
+                <button class="bot btn" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Statistics</button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a href="#">opcion#1</a></li>
                         <li><a href="#">opcion#2</a></li>
                         <li><a href="#">opcion#3</a></li>
                     </ul>    
-                <button class="btn-btn-default" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Contacts<span class="caret"></span></button>
+                <button class="bot btn" type="button" id="drop1" data-toggle="dropdown" aria-extended="true">Contacts</button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li><a href="#">opcion#1</a></li>
                         <li><a href="#">opcion#2</a></li>
                         <li><a href="#">opcion#3</a></li>
                     </ul>
-        </div>            
-        <div class="col-md-4">            
-            <div class="form-group">
-                <input class="form-control" id="search" type="text" placeholder="search:"><span class="glyphicon glyphicon-search float-right"></span></input>
-            </div>  
-                           
-        </div>
-        <div class="col-md-4"></div>
+            </div>            
+            <div class="col-md-4">            
+                <div class="form-group">
+                    <input class="form-control" id="search" type="text" placeholder="search:"></input>
+                </div>  
+            </div>               
+            <div class="col-md-4"></div>
+        </div>    
     </header>
     <br> 
     <div class="row">
         <div class="col-md-12">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#">Overview</a></li>
-                <li class="active"><a href="#">Account</a></li>
-                <li class="active"><a href="#">Projects</a></li>
+                <li class="active"><a data-toggle="tab" href="Overview">Overview</a></li>
+                <li><a data-toggle="tab" href="Account">Account</a></li>
+                <li><a data-toggle="tab" href="Projects">Projects</a></li>
             </ul>
         </div>    
     </div>    
