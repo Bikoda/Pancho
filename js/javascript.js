@@ -9,5 +9,5 @@ if (nombre == "bikoda") {
 } else if (nombre == "ciro"){
 	alert("sup nebu"); {
 } else {
-	document.write ("bienvenidos a Bikoda")
+	alert("bienvenidos a Bikoda");
 }
