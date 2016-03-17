@@ -2,10 +2,10 @@ var nombre;
 
 nombre = prompt ("ingresa tu nombre");
 
-if (nombre == "Bikoda") {
-	alert(" Bienvenido Sir Bikoda")
-} else if (nombre == "benjamin"){
-	alert("Hola gordon!")
-} else	alert("Bienvenido"){
+if (nombre == "bikoda") {
+	document.write ("Buenos dias Bikoda")
+} else if (nombre == "benja"){
+	document.write ("Hola Gordon!")
+} else {
+	document.write ("bienvenidos a Bikoda")
 }
-
