@@ -2,3 +2,20 @@
 	font-size: 25px;
 	color: #FF0000;
 }
+
+}
+.rose {
+	display: inline;
+}
+
+.sub {
+	color: #424242;
+}
+
+.disp {
+	display: inline;
+}
+.small {
+	height: 50px;
+	width: 55px;
+}
