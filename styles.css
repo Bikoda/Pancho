@@ -14,8 +14,47 @@ h1 {
 
 .disp {
 	display: inline;
+
 }
 .small {
 	height: 50px;
 	width: 55px;
+}
+.one {
+	background-color: #F2F2F2;
+}
+
+.big {
+	
+	width: 100%;
+	height: 65px;
+	
+}
+footer {
+	background-color: black;
+}
+#fot {
+	background-color: #F2F2F2;
+}
+
+.notugly {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.imgy {
+	height: 35px;
+	width: 35px;
+}
+.sep {
+	display: flex;
+	justify-content:
+	space-around;
+	text-align: center;
+	border: 1px solid #000;
+	
+}
+.small {
+
+	width: 125px;
 }
