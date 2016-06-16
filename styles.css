@@ -17,8 +17,8 @@ h1 {
 
 }
 .small {
-	height: 50px;
-	width: 55px;
+	height: 100px;
+	width: 100px;
 }
 .one {
 	background-color: #F2F2F2;
@@ -60,4 +60,11 @@ footer {
 }
 .nobullets {
 	list-style-type:none;
+}
+.ext {
+	
+	width: 250px;
+}
+.btn-block {
+	width: 250px;
 }
