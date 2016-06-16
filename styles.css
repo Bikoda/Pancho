@@ -58,3 +58,6 @@ footer {
 
 	width: 125px;
 }
+.nobullets {
+	list-style-type:none;
+}
