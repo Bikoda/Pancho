@@ -37,21 +37,21 @@ function option2(){
 	alert(name);
 }
 
-function optioncajas(){
+function cajas1(){
 document.getElementById('cajas').style.display = 'block';
 document.getElementById('triangles').style.display = 'none';
-
 }
 
-function optiontriangles(){
-document.getElementById('Triangles').style.display = 'block';
+function triangles1(){
+document.getElementById('triangles').style.display = 'block';
 document.getElementById('cajas').style.display = 'none';
-
 }
+
 function option55(){
 document.getElementById('red').style.display = 'block';
 document.getElementById('yellow').style.display = 'none';
 }
+
 function option66(){
 document.getElementById('yellow').style.display = 'block';
 document.getElementById('red').style.display = 'none';
