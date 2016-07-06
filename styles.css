@@ -1,5 +1,5 @@
 h1 {
-	font-size: 30px;
+	font-size: 40px;
 	color: #FF0000;
 }
 
@@ -51,7 +51,18 @@ footer {
 	justify-content:
 	space-around;
 	text-align: center;
-	border: 1px solid #000;
+	border: 1px solid #000000;	
+}
+.sepp {
+	height: 100%;
+	display: flex;
+	justify-content:
+	space-around;
+	text-align: center;
+	border: 1px solid:#08088A;
+	background-color: #819FF7;
+	color: #FFFFFF;
+}
 	
 }
 .small {
@@ -67,4 +78,16 @@ footer {
 }
 .btn-block {
 	width: 250px;
+}
+
+.colors {
+	background-color: #000000;
+}
+.gray {
+	background-color: #424242;
+	border-color: #1C1C1C;
+	color: #FFFFFF;
+}
+.blanco {
+	color: #FFFFFF;
 }
