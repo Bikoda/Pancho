@@ -5,13 +5,13 @@
     <title>Document</title>
 	<meta name="viweport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="js/javascript.js"></script>
+	<script src="javascript.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
  	<div class="container" style="display: inline;">
         <div class="col-md-3">
-				<h1><b><em>STORE NAME</em></b></h1>
+				<h1>STORE NAME</h1>
 		</div>		
 		<div class="col-md-4">		
 			<div class="form-group">
@@ -22,140 +22,725 @@
         <div class="col-md-1">
         	<br>
         	<div class="dropdown">
-  				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">choose
+  				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Shapes
  				<span class="caret"></span></button>
   				<ul class="dropdown-menu">
-    				<li><a href="#">option 3</a></li>
-   					<li><a href="#">option 1</a></li>
-    				<li><a href="#">option 2</a></li>
+    				<li><a href="#">Boxes</a></li>
+   					<li><a href="#">Triangles</a></li>
   				</ul>
 			</div>
 		</div>	
         <div class="col-md-4">
         	<div class="btn-group">
-  				<a href="#" class="btn btn-default">Option 1</a>
-			    <a href="#" class="btn btn-default">option 2</a>
+  				<a href="#" class="btn btn-default" onclick="option1()">Log In</a>
+			    <a href="#" class="btn btn-default">Create Acc</a>
 			    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span></a>
 			</div>
         </div>
-    <div class="col-md-12">
-	    <div class="row big">
-	    <br>
-	    	<div class="btn-group sep">
-	  				<li><a class="btn btn-default btn-block">option 1</a></li>
-				    <li><a class="btn btn-default btn-block">option 2</a></li>
-	  				<li><a class="btn btn-default btn-block">option 3</a></li>
-				    <li><a class="btn btn-default btn-block">option 4</a></li>
-	    	</div>    		   
+    <div id="cajas">    
+	    <div class="col-md-12 colors">
+		    <div class="row big">
+		    <br>
+		    	<div class="btn-group sep">
+		  				<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option11()">Green boxes</a></li>
+					    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option22()">Blue boxes</a></li>
+		  				<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option33()">Pink boxes</a></li>
+					    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option44()">Brown boxes</a></li>
+		    	</div>    		   
+		    </div>
+		</div>
+		<br>    
+	    <div class="row">
+	    	<div class="col-md-4">
+	    		    <div class="container">                
+	                    <ul class="nobullets">                  
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
+		                </ul>
+		            </div>
+		                <br> 
+	                    	<div class="container ext">
+				    		<label for="exampleSelect2">Select something</label>
+				    			<select multiple class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>			                        
+	    	</div>
+	    	<div id="verde" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+		    <div id="azul" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div id="rosa" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+		    <div id="marron" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
 	    </div>
 	</div> 
-	<br>    
-    <div class="row">
-    	<div class="col-md-4">
-    		    <div class="container">                
-                    <ul class="nobullets">                  
-	                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
-	                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
-	                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
-	                </ul>
-	            </div>
-	                <br> 
-                    	<div class="container ext">
-			    		<label for="exampleSelect2">Select something</label>
-			    			<select multiple class="form-control">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-								<option>5</option>
-							</select>
-						</div>			                        
-    	</div>
-    	
-        	<div class="disp col-md-2">
-    		<ul class="nobullets">
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    		</ul>
-    	</div>
-    	<div class="disp col-md-2">
-    		<ul class="nobullets">
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    		</ul>
-    	</div>
-    	<div class="disp col-md-2">
-    		<ul class="nobullets">
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    		</ul>
-    	</div>
-    	<div class="disp col-md-2">
-    		<ul class="nobullets">
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    			<div>
-    				<li><a href="#" class="btn btn-link"><img class="small" src="green.jpg"/></a></li>
-    				<p><b>Object Name</b></p>
-    				<p>New Item $400</p>
-    			</div>	
-    		</ul>
-    	</div>
-    </div>	
+	<div id="Triangles">    
+	    <div class="col-md-12 colors">
+		    <div class="row big">
+		    <br>
+		    	<div class="btn-group sep">
+		  				<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option11()">Green boxes</a></li>
+					    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option22()">Blue boxes</a></li>
+		  				<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option33()">Pink boxes</a></li>
+					    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option44()">Brown boxes</a></li>
+		    	</div>    		   
+		    </div>
+		</div>
+		<br>    
+	    <div class="row">
+	    	<div class="col-md-4">
+	    		    <div class="container">                
+	                    <ul class="nobullets">                  
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
+		                </ul>
+		            </div>
+		                <br> 
+	                    	<div class="container ext">
+				    		<label for="exampleSelect2">Select something</label>
+				    			<select multiple class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>			                        
+	    	</div>
+	    	<div id="verde" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="green.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+		    <div id="azul" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="blue.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div id="rosa" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="pink.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+		    <div id="marron" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="brown.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+	    </div>
+	</div>
+
 
     <br>
-    <div class="sep">
-        <a href="#"><img src="google.png" class="imgy" /><p>google+</p></a>
-        <a href="#"><img src="twitter.png" class="imgy"/><p>@twitter</p></a>
-        <a href="#"><img src="facebook.png" class="imgy"/><p>facebook</p></a>
-        <a href="#"><img src="skype.png" class="imgy"/><p>skype</p></a>
+    <div class="sepp">
+        <a href="#"><img src="google.png" class="imgy" /><p>Google+</p></a>
+        <a href="#"><img src="twitter.png" class="imgy"/><p>Twitter</p></a>
+        <a href="#"><img src="facebook.png" class="imgy"/><p>Facebook</p></a>
+        <a href="#"><img src="skype.png" class="imgy"/><p>Skype</p></a>
     </div>		
 	
 
