@@ -25,8 +25,8 @@
   				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Shapes
  				<span class="caret"></span></button>
   				<ul class="dropdown-menu">
-    				<li><a href="#">Boxes</a></li>
-   					<li><a href="#">Triangles</a></li>
+    				<li class="nobullets"><a class="btn btn-default btn-block" onclick="optioncajas()">Boxes</a></li>
+   					<li class="nobullets"><a class="btn btn-default btn-block" onclick="optiontriangles()">Triangles</a></li>
   				</ul>
 			</div>
 		</div>	
@@ -54,7 +54,7 @@
 	    	<div class="col-md-4">
 	    		    <div class="container">                
 	                    <ul class="nobullets">                  
-		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
+		                    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
 		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
 		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
 		                </ul>
@@ -384,6 +384,196 @@
 		    	</div>
 		    </div>	
 	    </div>
+	</div> 
+	<div id="Triangles" style='display:none;'>    
+	    <div class="col-md-12 colors">
+		    <div class="row big">
+		    <br>
+		    	<div class="btn-group sep">
+		  				<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option55()">Red Triangle</a></li>
+					    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option66()">Yellow Triangle</a></li>
+		    	</div>    		   
+		    </div>
+		</div>
+		<br>    
+	    <div class="row">
+	    	<div class="col-md-4">
+	    		    <div class="container">                
+	                    <ul class="nobullets">                  
+		                    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
+		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
+		                </ul>
+		            </div>
+		                <br> 
+	                    	<div class="container ext">
+				    		<label for="exampleSelect2">Select something</label>
+				    			<select multiple class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>			                        
+	    	</div>
+	    	<div id="red" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="Fire_triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>	
+		    <div id="yellow" style='display:none;'>
+		        <div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    	<div class="disp col-md-2">
+		    		<ul class="nobullets">
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    			<div>
+		    				<li><a href="#" class="btn btn-link"><img class="small" src="triangle.png"/></a></li>
+		    				<p><b>Object Name</b></p>
+		    				<p>New Item $400</p>
+		    			</div>	
+		    		</ul>
+		    	</div>
+		    </div>
+		</div>    
 	</div> 
 
 
