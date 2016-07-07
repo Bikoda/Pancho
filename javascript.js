@@ -68,3 +68,6 @@ document.getElementById('red').style.display = 'none';
 function optionw(){
 	window.open("https://community.box.com/");
 }
+function oprionm(){
+	window.open("www.junctiontriangle.ca/forum");
+}
