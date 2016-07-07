@@ -9,35 +9,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 	<div class="container" style="display: inline;">
-        <div class="col-md-3">
-				<h1>STORE NAME</h1>
-		</div>		
-		<div class="col-md-4">		
-			<div class="form-group">
-                <label for="nombre">  </label>
-                <input class="form-control" id="nombre" type="text" placeholder="Search here...">
-            </div> 
-        </div>
-        <div class="col-md-1">
-        	<br>
-        	<div class="dropdown">
-  				<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Shapes
- 				<span class="caret"></span></button>
-  				<ul class="dropdown-menu">
-    				<li class="nobullets"><a class="btn btn-default btn-block" onclick="cajas1()">Boxes</a></li>
-   					<li class="nobullets"><a class="btn btn-default btn-block" onclick="triangles1()">Triangles</a></li>
+	<div class="light">
+		<div class="container" style="display: inline;">
+		        <div class="col-md-3">
+						<img src="50.png" class="ant"/>
+				</div>		
+				<div class="col-md-4">		
+					<div class="form-group">
+		                <label for="nombre">  </label>
+		                <input class="form-control" id="nombre" type="text" placeholder="Search here...">
+		            </div> 
+		        </div>
+		        <div class="col-md-1">
+		        	<br>
+		        	<div class="dropdown">
+		  				<button class="btn btn-default dropdown-toggle shapes" type="button" data-toggle="dropdown">Shapes
+		 				<span class="caret"></span></button>
+		  				<ul class="dropdown-menu shapes">
+		    				<li class="nobullets"><a class="btn btn-block tit" onclick="cajas1()">Boxes</a></li>
+		   					<li class="nobullets"><a class="btn btn-block tit" onclick="triangles1()">Triangles</a></li>
 
-  				</ul>
-			</div>
-		</div>	
-        <div class="col-md-4">
-        	<div class="btn-group">
-  				<a href="#" class="btn btn-default" onclick="option1()">Log In</a>
-			    <a href="#" class="btn btn-default">Create Acc</a>
-			    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-			</div>
-        </div>
+		  				</ul>
+					</div>
+				</div>	
+		        <div class="col-md-4">
+		        	<div class="btn-group">
+		  				<a href="#" class="btn btn-default shapes" onclick="option1()">Log In</a>
+					    <a href="#" class="btn btn-default shapes">Create Acc</a>
+					    <a href="#" class="btn btn-default shapes"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+					</div>
+		        </div>
+		</div>
+	</div>        
     <div id="cajas">    
 	    <div class="col-md-12 colors">
 		    <div class="row big">
@@ -52,26 +55,16 @@
 		</div>
 		<br>    
 	    <div class="row">
-	    	<div class="col-md-4">
-	    		    <div class="container">                
-	                    <ul class="nobullets">                  
-		                    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
-		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
-		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
-		                </ul>
-		            </div>
-		                <br> 
-	                    	<div class="container ext">
-				    		<label for="exampleSelect2">Select something</label>
-				    			<select multiple class="form-control">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>			                        
-	    	</div>
+	    	<div class="col-md-4 stre">
+	    		<div class="container">  
+	        	<br>              
+	                <ul class="nobullets">                  
+	            	    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages </span></a></li>
+		    	        <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Forum </span></a></li>
+	     	           <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> Advanced </span></a></li>
+		            </ul>
+		        </div>
+			</div>
 	    	<div id="verde" style='display:none;'>
 		        <div class="disp col-md-2">
 		    		<ul class="nobullets">
@@ -398,26 +391,16 @@
 		</div>
 		<br>    
 	    <div class="row">
-	    	<div class="col-md-4">
-	    		    <div class="container">                
-	                    <ul class="nobullets">                  
-		                    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages</span></a></li>
-		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Contacts</span></a></li>
-		                    <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> settings</span></a></li>
-		                </ul>
-		            </div>
-		                <br> 
-	                    	<div class="container ext">
-				    		<label for="exampleSelect2">Select something</label>
-				    			<select multiple class="form-control">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>			                        
-	    	</div>
+	    	<div class="col-md-4 stre">
+	    		<div class="container">  
+	        	<br>              
+	                <ul class="nobullets">                  
+	            	    <li><a class="btn btn-default btn-block" onclick="option2()"><span class="glyphicon glyphicon-envelope"> Messages </span></a></li>
+		    	        <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-user"> Forum </span></a></li>
+	     	           <li><a class="btn btn-default btn-block"><span class="glyphicon glyphicon-cog"> Advanced </span></a></li>
+		            </ul>
+		        </div>
+		    </div>    
 	    	<div id="red" style='display:none;'>
 		        <div class="disp col-md-2">
 		    		<ul class="nobullets">
@@ -579,11 +562,14 @@
 
 
     <br>
-    <div class="sepp">
-        <a href="#"><img src="google.png" class="imgy" /><p>Google+</p></a>
-        <a href="#"><img src="twitter.png" class="imgy"/><p>Twitter</p></a>
-        <a href="#"><img src="facebook.png" class="imgy"/><p>Facebook</p></a>
-        <a href="#"><img src="skype.png" class="imgy"/><p>Skype</p></a>
+    <div class="lightt">
+    	<br>
+  		<div class="sepp">
+        	<a href="#"><img src="google.png" class="imgy" /><p class="imi"><b>Google+</b></p></a>
+        	<a href="#"><img src="twitter.png" class="imgy"/><p class="imi"><b>Twitter</b></p></a>
+        	<a href="#"><img src="facebook.png" class="imgy"/><p class="imi"><b>Facebook</b></p></a>
+        	<a href="#"><img src="skype.png" class="imgy"/><p class="imi"><b>Skype</b></p></a>
+        </div>
     </div>		
 	
 
