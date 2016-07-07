@@ -69,5 +69,5 @@ function optionw(){
 	window.open("https://community.box.com/");
 }
 function optionm(){
-	window.open("www.junctiontriangle.ca/forum");
+	window.open("www.trianglemtb.com/forums.php");
 }
