@@ -93,7 +93,6 @@ footer {
 	border-color: #585858;
 	border-radius: 4px;
 	height: 150%;
-	margin-left: 20px;
 }
 .light {
 	background-image: url("cau.png");
@@ -148,4 +147,35 @@ footer {
 	border-color: #6E6E6E;
 	height: 250px;
 	width: 100%;
+}
+.pad {
+	background-color: #6E6E6E;
+	border-color: #E6E6E6;
+
+}
+.rock{
+	background-color: #DBA901	;
+	color: #FFFFFF;
+	border-color: #868A08;
+}
+.rock:hover{
+	background-color: #F7D358;
+	color: #E6E6E6;
+	border-color: #B18904;
+}
+.rock:active{
+	background-color: #B40404;
+	border-color: #F5A9A9;
+	color: #FFFFFF;
+}
+body{
+    background-color: #525252;
+}
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
