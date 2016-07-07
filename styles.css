@@ -59,9 +59,6 @@ footer {
 	justify-content:
 	space-around;
 	text-align: center;
-	border: 1px solid:#08088A;
-	background-color: #819FF7;
-	color: #FFFFFF;
 }
 	
 }
@@ -90,4 +87,65 @@ footer {
 }
 .blanco {
 	color: #FFFFFF;
+}
+.stre {
+	background-color: #BDBDBD;
+	border-color: #585858;
+	border-radius: 4px;
+	height: 150%;
+	margin-left: 20px;
+}
+.light {
+	background-image: url("cau.png");
+	border-color: #6E6E6E;
+	height: 100px;
+	width: 100%;
+}
+.confetty {
+	font: Confetti;
+	src: fonts/Confetti;
+}
+.ant {
+	height: 70px;
+	width: 200px;
+}
+.shapes {
+	background-color: #FE2E2E;
+	color: #FFFFFF;
+	border-color: #B40404;
+
+}
+.shapes:hover{
+	background-color: #F78181;
+	border-color: #8A0808;
+}
+.tit {
+	background-color: #FE2E2E;
+	text-decoration-color: #FFFFFF;
+	border-color: #FE2E2E;
+}
+.tit:hover{
+	background-color: #F78181;
+	border-color: #8A0808;
+}
+.shapes:active{
+	background-color: #6E6E6E;
+	border-color: #D8D8D8;
+}
+.imi{
+	color: #DF0101;
+	border-color: #FA5858;
+}
+.imi:hover{
+	color: #FFFFFF;
+}
+.imi:active{
+	color: #AEB404;
+	border-color: #F2F5A9;
+}
+.lightt {
+	background-image: url("cau.png");
+	border-color: #6E6E6E;
+	height: 250px;
+	width: 100%;
 }
