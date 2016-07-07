@@ -56,5 +56,3 @@ function option66(){
 document.getElementById('yellow').style.display = 'block';
 document.getElementById('red').style.display = 'none';
 }
-
-
