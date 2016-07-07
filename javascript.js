@@ -68,6 +68,3 @@ document.getElementById('red').style.display = 'none';
 function optionw(){
 	window.open("https://community.box.com/");
 }
-function optionm(){
-	window.open("https://community.box.com/");
-}
