@@ -11,7 +11,6 @@ document.getElementById('green2').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 }
-
 function option22(){
 document.getElementById('cajas').style.display = 'block';	
 document.getElementById('azul').style.display = 'block';	
@@ -25,7 +24,6 @@ document.getElementById('green2').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 }
-
 function option33(){
 document.getElementById('cajas').style.display = 'block';	
 document.getElementById('rosa').style.display = 'block';
@@ -39,7 +37,6 @@ document.getElementById('green2').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 }
-
 function option44(){
 document.getElementById('cajas').style.display = 'block';
 document.getElementById('marron').style.display = 'block';
@@ -52,10 +49,6 @@ document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
-}
-
-function option2(){
-	alert("You have no messages.");
 }
 function singup1(){
 document.getElementById('singup').style.display = 'block';
@@ -128,22 +121,106 @@ document.getElementById('cajas').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 }
-
-function optionw(){
-	window.open("https://community.box.com/");
-}
-
 function log(){
 document.getElementById('cajas').style.display = 'block';
 document.getElementById('triangles').style.display = 'none';
 document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 }
-
-
+function fire(){
+document.getElementById('triangles').style.display = 'block';
+document.getElementById('fire1').style.display = 'block';
+document.getElementById('yellow').style.display = 'none';
+document.getElementById('red').style.display = 'none';
+document.getElementById('yellow2').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function yellow1(){
+document.getElementById('triangles').style.display = 'block';
+document.getElementById('yellow2').style.display = 'block';
+document.getElementById('yellow').style.display = 'none';
+document.getElementById('red').style.display = 'none';
+document.getElementById('fire1').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function rosa1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'block';
+document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function marron1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'block';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function verde1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'block';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function azul1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'block';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
+}
+function option2(){
+	alert("You have no messages.");
+}
+function optionw(){
+	window.open("https://community.box.com/");
+}
 function input1(form){
 	var value = form.search.value;
 	if (value == "boxes"){
+		cajas1();
+	}
+	else if (value == "box"){
+		cajas1();
+	}
+	else if (value == "square"){
+		cajas1();
+	}
+	else if (value == "squares"){
 		cajas1();
 	}
 	else if (value == "triangles"){
@@ -158,11 +235,9 @@ function input1(form){
 	else if (value == "signs"){
 		triangles1();
 	}
-
 	else if (value == "green boxes"){
 		option11();
-	}
-	
+	}	
 	else if (value == "green box"){
 		option11();
 	}
@@ -309,95 +384,3 @@ function input1(form){
 	}
 	return false;
 }
-
-function singup11(form){
-		var value = form.singup.value;
-
-}
-
-
-function fire(){
-document.getElementById('triangles').style.display = 'block';
-document.getElementById('fire1').style.display = 'block';
-document.getElementById('yellow').style.display = 'none';
-document.getElementById('red').style.display = 'none';
-document.getElementById('yellow2').style.display = 'none';
-document.getElementById('cajas').style.display = 'none';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-function yellow1(){
-document.getElementById('triangles').style.display = 'block';
-document.getElementById('yellow2').style.display = 'block';
-document.getElementById('yellow').style.display = 'none';
-document.getElementById('red').style.display = 'none';
-document.getElementById('fire1').style.display = 'none';
-document.getElementById('cajas').style.display = 'none';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-
-
-function rosa1(){
-document.getElementById('cajas').style.display = 'block';
-document.getElementById('rosa').style.display = 'none';
-document.getElementById('verde').style.display = 'none';
-document.getElementById('azul').style.display = 'none';
-document.getElementById('marron').style.display = 'none';
-document.getElementById('triangles').style.display = 'none';
-document.getElementById('brown2').style.display = 'none';
-document.getElementById('blue2').style.display = 'none';
-document.getElementById('pink2').style.display = 'block';
-document.getElementById('green2').style.display = 'none';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-function marron1(){
-document.getElementById('cajas').style.display = 'block';
-document.getElementById('rosa').style.display = 'none';
-document.getElementById('verde').style.display = 'none';
-document.getElementById('azul').style.display = 'none';
-document.getElementById('marron').style.display = 'none';
-document.getElementById('triangles').style.display = 'none';
-document.getElementById('brown2').style.display = 'block';
-document.getElementById('blue2').style.display = 'none';
-document.getElementById('pink2').style.display = 'none';
-document.getElementById('green2').style.display = 'none';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-function verde1(){
-document.getElementById('cajas').style.display = 'block';
-document.getElementById('rosa').style.display = 'none';
-document.getElementById('verde').style.display = 'none';
-document.getElementById('azul').style.display = 'none';
-document.getElementById('marron').style.display = 'none';
-document.getElementById('triangles').style.display = 'none';
-document.getElementById('brown2').style.display = 'none';
-document.getElementById('blue2').style.display = 'none';
-document.getElementById('pink2').style.display = 'none';
-document.getElementById('green2').style.display = 'block';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-function azul1(){
-document.getElementById('cajas').style.display = 'block';
-document.getElementById('rosa').style.display = 'none';
-document.getElementById('verde').style.display = 'none';
-document.getElementById('azul').style.display = 'none';
-document.getElementById('marron').style.display = 'none';
-document.getElementById('triangles').style.display = 'none';
-document.getElementById('brown2').style.display = 'none';
-document.getElementById('blue2').style.display = 'block';
-document.getElementById('pink2').style.display = 'none';
-document.getElementById('green2').style.display = 'none';
-document.getElementById('singup').style.display = 'none';
-document.getElementById('login').style.display = 'none';
-
-}
-
