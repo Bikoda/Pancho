@@ -4,6 +4,10 @@ document.getElementById('verde').style.display = 'block';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('marron').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
 }
 
 function option22(){
@@ -12,14 +16,22 @@ document.getElementById('azul').style.display = 'block';
 document.getElementById('verde').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('marron').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
 }
 
 function option33(){
 document.getElementById('cajas').style.display = 'block';	
 document.getElementById('rosa').style.display = 'block';
-document.getElementById('azul').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('marron').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
 }
 
 function option44(){
@@ -28,6 +40,10 @@ document.getElementById('marron').style.display = 'block';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('verde').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
 }
 
 function option2(){
@@ -54,6 +70,10 @@ document.getElementById('marron').style.display = 'none';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('verde').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
 }
 
 function triangles1(){
@@ -63,6 +83,8 @@ document.getElementById('singup').style.display = 'none';
 document.getElementById('login').style.display = 'none';
 document.getElementById('red').style.display = 'none';
 document.getElementById('yellow').style.display = 'none';
+document.getElementById('fire1').style.display = 'none';
+document.getElementById('yellow2').style.display = 'none';
 }
 
 function option55(){
@@ -73,6 +95,9 @@ document.getElementById('verde').style.display = 'none';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('marron').style.display = 'none';
+document.getElementById('fire1').style.display = 'none';
+document.getElementById('yellow2').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
 }
 
 function option66(){
@@ -83,6 +108,9 @@ document.getElementById('verde').style.display = 'none';
 document.getElementById('azul').style.display = 'none';
 document.getElementById('rosa').style.display = 'none';
 document.getElementById('marron').style.display = 'none';
+document.getElementById('fire1').style.display = 'none';
+document.getElementById('yellow2').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
 }
 
 function optionw(){
@@ -269,4 +297,79 @@ function input1(form){
 function singup11(form){
 		var value = form.singup.value;
 
-}		
+}
+
+
+function fire(){
+document.getElementById('triangles').style.display = 'block';
+document.getElementById('fire1').style.display = 'block';
+document.getElementById('yellow').style.display = 'none';
+document.getElementById('red').style.display = 'none';
+document.getElementById('yellow2').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
+
+}
+function yellow1(){
+document.getElementById('triangles').style.display = 'block';
+document.getElementById('yellow2').style.display = 'block';
+document.getElementById('yellow').style.display = 'none';
+document.getElementById('red').style.display = 'none';
+document.getElementById('fire1').style.display = 'none';
+document.getElementById('cajas').style.display = 'none';
+
+}
+
+
+function rosa1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'block';
+document.getElementById('green2').style.display = 'none';
+
+}
+function marron1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'block';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
+
+}
+function verde1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'none';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'block';
+
+}
+function azul1(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('rosa').style.display = 'none';
+document.getElementById('verde').style.display = 'none';
+document.getElementById('azul').style.display = 'none';
+document.getElementById('marron').style.display = 'none';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('brown2').style.display = 'none';
+document.getElementById('blue2').style.display = 'block';
+document.getElementById('pink2').style.display = 'none';
+document.getElementById('green2').style.display = 'none';
+
+}
+
