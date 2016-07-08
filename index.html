@@ -14,11 +14,15 @@
 		        <div class="col-md-3">
 						<img src="50.png" class="ant"/>
 				</div>		
-				<div class="col-md-4">		
-					<div class="form-group">
-		                <label for="nombre">  </label>
-		                <input class="form-control" id="nombre" type="text" placeholder="Search here...">
-		            </div> 
+				<div class="col-md-4">
+					<br>
+					<form class="form-inline" onsubmit="return input1(this)">	
+						<div class="form-group yuo row">
+			                <label for="nombre">  </label>
+			                <input class="form-control" id="search" name="search" type="text" placeholder="Search here..." >
+			                <input type="submit" class="btn btn-default tit"></input>
+			            </div> 
+			        </form>    
 		        </div>
 		        <div class="col-md-1">
 		        	<br>
@@ -42,104 +46,30 @@
 		</div>
 	</div> 
 	<div id="login">
-		<div class="container">
-        <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-        	<div class="panel panel-default">
-        		<div class="panel-heading">
-			    		<h3 class="panel-title">Log In</h3>
-			 			</div>
-			 			<div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						
-			    					</div>
-			    				</div>
-			    			</div>
-
-			    			<div class="form-group">
-			    				
-			    			</div>
-
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="account">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-			    					</div>
-			    				</div>
-			    			</div>
-
-			    			<a class="btn btn-info btn-block tot" onclick="cajas1()">Login</a>
-			    			
-			    		
-			    		</form>
-			    	</div>
-	    		</div>
-    		</div>
-    	</div>
-    </div>
-		
+		<div>
+    		<form id="login" name= "myForm" method="put" action="" onsubmit="return validateForm()">
+        		<fieldset id="inputs">
+            		<input name="uname" id="username" type="text" placeholder="Username" autofocus required>   
+            		<input name="pass" id="password" type="password" placeholder="Password" required>
+       		    </fieldset>
+                <fieldset id="actions">
+                	<a type="submit" id="submit" value="Log in" class="btn btn-block tit" onclick="cajas1()">Login</a>
+           		</fieldset>
+        	</form>
+   	    </div>
 	</div>
 	<div id="singup" style="display: none;">
-		<div class="container">
-        <div class="row centered-form">
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-        	<div class="panel panel-default">
-        		<div class="panel-heading">
-			    		<h3 class="panel-title">Sing up today <small>It's free!</small></h3>
-			 			</div>
-			 			<div class="panel-body">
-			    		<form role="form">
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
-			    					</div>
-			    				</div>
-			    			</div>
-
-			    			<div class="form-group">
-			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
-			    			</div>
-
-			    			<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="form-group">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-			    					</div>
-			    				</div>
-			    			</div>
-			    			
-			    			<input type="submit" value="Register" class="btn btn-info btn-block">
-			    		
-			    		</form>
-			    	</div>
-	    		</div>
-    		</div>
-    	</div>
-    </div>
+		<div>
+    		<form id="singup" name= "myForm2" method="put" action="" onsubmit="return validateForm()">
+        		<fieldset id="inputs">
+            		<input name="uname" id="username" type="text" placeholder="Username" autofocus required>   
+            		<input name="pass" id="password" type="password" placeholder="Password" required>
+       		    </fieldset>
+                <fieldset id="actions">
+           	        <input type="submit" id="submit" value="Singup" class="tit">
+        		</fieldset>
+        	</form>
+   	    </div>
 	</div>       
     <div id="cajas" style="display: none;">    
 	    <div class="col-md-12 colors">
