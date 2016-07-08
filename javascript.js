@@ -8,6 +8,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option22(){
@@ -20,6 +22,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option33(){
@@ -32,6 +36,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option44(){
@@ -44,6 +50,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option2(){
@@ -74,6 +82,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function triangles1(){
@@ -85,6 +95,8 @@ document.getElementById('red').style.display = 'none';
 document.getElementById('yellow').style.display = 'none';
 document.getElementById('fire1').style.display = 'none';
 document.getElementById('yellow2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option55(){
@@ -98,6 +110,8 @@ document.getElementById('marron').style.display = 'none';
 document.getElementById('fire1').style.display = 'none';
 document.getElementById('yellow2').style.display = 'none';
 document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function option66(){
@@ -111,6 +125,8 @@ document.getElementById('marron').style.display = 'none';
 document.getElementById('fire1').style.display = 'none';
 document.getElementById('yellow2').style.display = 'none';
 document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
 
 function optionw(){
@@ -307,6 +323,8 @@ document.getElementById('yellow').style.display = 'none';
 document.getElementById('red').style.display = 'none';
 document.getElementById('yellow2').style.display = 'none';
 document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 function yellow1(){
@@ -316,6 +334,8 @@ document.getElementById('yellow').style.display = 'none';
 document.getElementById('red').style.display = 'none';
 document.getElementById('fire1').style.display = 'none';
 document.getElementById('cajas').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 
@@ -331,6 +351,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'block';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 function marron1(){
@@ -344,6 +366,8 @@ document.getElementById('brown2').style.display = 'block';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 function verde1(){
@@ -357,6 +381,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'none';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'block';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 function azul1(){
@@ -370,6 +396,8 @@ document.getElementById('brown2').style.display = 'none';
 document.getElementById('blue2').style.display = 'block';
 document.getElementById('pink2').style.display = 'none';
 document.getElementById('green2').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 
 }
 
