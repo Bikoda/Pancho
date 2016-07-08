@@ -27,7 +27,7 @@ document.getElementById('verde').style.display = 'none';
 }
 
 function option2(){
-	alert(name);
+	alert("You have no messages.");
 }
 function singup1(){
 document.getElementById('singup').style.display = 'block';
@@ -67,4 +67,11 @@ document.getElementById('red').style.display = 'none';
 
 function optionw(){
 	window.open("https://community.box.com/");
+}
+
+function log(){
+document.getElementById('cajas').style.display = 'block';
+document.getElementById('triangles').style.display = 'none';
+document.getElementById('singup').style.display = 'none';
+document.getElementById('login').style.display = 'none';
 }
