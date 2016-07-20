@@ -9,808 +9,211 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="light">
-		<div class="container" style="display: inline;">
-		        <div class="hidden-xs hidden-sm col-md-3">
-						<img src="50.png" class="ant"/>
-				</div>		
-				<div class="hidden-xs hidden-sm col-md-4">
-					<br>
-					<form class="form-inline" onsubmit="return input1(this)">	
-						<div class="form-group yuo row">
-			                <label for="nombre">  </label>
-			                <input class="form-control" id="search" name="search" type="text" placeholder="Search here..." >
-			                <input type="submit" class="btn btn-default tit"></input>
-			            </div> 
-			        </form>    
-		        </div>
-		        <div class="col-sm-6 col-md-1">
-		        	<br>
-		        	<div class="dropdown">
-		  				<button class="btn btn-default dropdown-toggle shapes" type="button" data-toggle="dropdown">Shapes
-		 				<span class="caret"></span></button>
-		  				<ul class="dropdown-menu shapes">
-		    				<li class="nobullets"><a class="btn btn-block tit" onclick="cajas1()">Boxes</a></li>
-		   					<li class="nobullets"><a class="btn btn-block tit" onclick="triangles1()">Triangles</a></li>
-
-		  				</ul>
-					</div>
-				</div>	
-		        <div class="hidden-xs col-sm-6 col-md-4">
-		        	<div class="btn-group">
-		  				<a href="#" class="btn btn-default shapes" onclick="login1()">Log In</a>
-					    <a href="#" class="btn btn-default shapes" onclick="singup1()">Create Acc</a>
-					    <a href="#" class="btn btn-default shapes"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-					</div>
-		        </div>
-		</div>
-	</div> 
-	<div id="login">
-		<div>
-    		<form id="login" name= "myForm" method="put" action="" onsubmit="return validateForm()">
-        		<fieldset id="inputs">
-            		<input name="uname" id="username" type="text" placeholder="Username" autofocus required>   
-            		<input name="pass" id="password" type="password" placeholder="Password" required>
-       		    </fieldset>
-                <fieldset id="actions">
-                	<a type="submit" id="submit" value="Log in" class="btn tit" onclick="cajas1()">Login</a>
-           		</fieldset>
-        	</form>
-   	    </div>
-	</div>
-	<div id="singup" style="display: none;">
-		<div>
-    		<form id="singup" name= "myForm2" method="put" action="" onsubmit="return validateForm()">
-        		<fieldset id="inputs">
-            		<input name="uname" id="username" type="text" placeholder="Username" autofocus required>   
-            		<input name="pass" id="password" type="password" placeholder="Password" required>
-       		    </fieldset>
-                <fieldset id="actions">
-           	        <a type="submit" id="submit" value="signUp" class="btn tit" onclick="cajas1()">Sing Up</a>
-        		</fieldset>
-        	</form>
-   	    </div>
-	</div>       
-    <div id="cajas" style="display: none;">    
-	    <div class="col-sm-12 col-md-12 colors">
-		    <div class="row big">
-		    	<div class="btn-group sep">
-		  			<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option11()">Green boxes</a></li>
-				    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option22()">Blue boxes</a></li>
-		  			<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option33()">Pink boxes</a></li>
-				    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option44()">Brown boxes</a></li>
-		    	</div>    		   
-		    </div>
-		</div>    
-	    <div class="row">
-	    	<div class="col-sm-12 col-md-12 stre">   		
-				<div id="generic-container" style="display: none;">
+	<div class="row">
+		<div class="stylish col-md-12">
+			<div class="hidden-xs hidden-sm col-md-4">
+				<br>
+				<img src="logo.png" class="jolli" />
+				<input class="form-control shrk" id="#" type="text" placeholder="search.." onclick="yt()">
+			</div>
+			<div class="hidden-xs hidden-sm col-md-6">
+			    <br>
+				<div class="sep nobullets">
+					<li><a class="btn btn-link boby">Discover</a></li>
+					<li><a class="btn btn-link bob">Random</a></li>
+					<li><a class="btn btn-link bobe">Radios</a></li>
+					<li><a class="btn btn-link bob">Playlists</a></li>
+					<li><a class="btn btn-link bob">Store</a></li>
+					<li><a class="btn btn-link bob">Myspace</a></li>
+					<li><a class="btn btn-link bob">Queue</a></li>
 				</div>
-	    		<div id="verde" style='display:none;'>
-		        	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(01)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 1</b></p>
-			    				<p>New Item $201</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(02)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 2</b></p>
-			    				<p>New Item $202</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(03)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 3</b></p>
-			    				<p>New Item $203</p>
-			    			</div>	
-			    		</ul>
-			    	</div>	
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(04)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 4</b></p>
-			    				<p>New Item $204</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(05)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 5</b></p>
-			    				<p>New Item $205</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(06)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 6</b></p>
-			    				<p>New Item $206</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(07)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 7</b></p>
-			    				<p>New Item $207</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(08)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 8</b></p>
-			    				<p>New Item $208</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(09)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 9</b></p>
-			    				<p>New Item $209</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(10)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 10</b></p>
-			    				<p>New Item $210</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(11)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 11</b></p>
-			    				<p>New Item $211</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(12)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 12</b></p>
-			    				<p>New Item $212</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(13)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 13</b></p>
-			    				<p>New Item $213</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(14)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 14</b></p>
-			    				<p>New Item $214</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(15)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 15</b></p>
-			    				<p>New Item $215</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(16)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 16</b></p>
-			    				<p>New Item $216</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(17)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 17</b></p>
-			    				<p>New Item $217</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(18)"><img class="small" src="green.png"/></a>
-			    				<p><b>Green Box 18</b></p>
-			    				<p>New Item $218</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    	</div>		
-		  	    <div id="azul" style='display:none;'>
-		  	    	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(19)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 1</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(20)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 2</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(21)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 3</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		       		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(22)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 4</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(23)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 5</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(24)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 6</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		   	 		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(25)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 7</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(26)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 8</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(27)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 9</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		   		 	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(28)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 10</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(29)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 11</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(30)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 12</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		  		  	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(31)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 13</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(32)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 14</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(33)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 15</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		   		 	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(34)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 16</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(35)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 17</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(36)"><img class="small" src="blue.png"/></a>
-			    				<p><b>Blue Box 18</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    	</div>	
-		   	 	<div id="rosa" style='display:none;'>
-		       		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(37)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 1</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(38)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 2</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(39)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 3</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(40)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 4</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(41)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 5</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(42)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 6</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		   		 	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(43)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 7</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(44)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 8</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(45)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 9</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		  		  	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(46)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 10</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(47)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 11</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(48)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 12</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		  		  	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(49)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 13</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(50)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 14</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(51)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 15</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		  		  	</div>
-		  		  	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(52)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 16</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(53)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 17</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(54)"><img class="small" src="pink.png"/></a>
-			    				<p><b>Pink Box 18</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		  		  	</div>	
-		  		</div>  	
-		    	<div id="marron" style='display:none;'>
-		        	<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(55)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 1</p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(56)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 2</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(57)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 3</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(58)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 4</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(59)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 5</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(60)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 6</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(61)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 7</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(62)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 8</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(63)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 9</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(64)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 10</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(65)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 11</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(66)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 12</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>		    	
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(67)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 13</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(68)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 14</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(69)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 15</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>		    	
-		    		<div class="disp col-md-2">
-			    		<ul class="nobullets">
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(70)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 16</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(71)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 17</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(72)"><img class="small" src="brown.png"/></a>
-			    				<p><b>Brown Box 18</b></p>
-			    				<p>New Item $400</p>
-			    			</div>	
-			    		</ul>
-		    		</div>	
-	    		</div>
-	    	</div>	
-		</div>
-	</div>	 
-	<div id="triangles" style="display: none;">    
-	    <div class="col-sm-12 col-md-12 colors">
-		    <div class="btn-group sep">
-		  		<li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option55()">Red Triangle</a></li>
-			    <li class="nobullets"><a class="btn btn-default gray btn-block" onclick="option66()">Yellow Triangle</a></li>
-		    </div>    		   
-		</div>   
-	    <div class="row">
-	    	<div class="col-sm-12 col-md-12 stre">
-			    <div id="red" style='display:none;'>
-		        	<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(73)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 1</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(74)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 2</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(75)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 3</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(76)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 4</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(77)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 5</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(78)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 6</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-		   			</div>
-		   			<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(79)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 7</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(80)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 8</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(81)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 9</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-			    	</div>
-		    		<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(82)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 10</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(83)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 11</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(84)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 12</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-		    		</div>
-		    		<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(85)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 13</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(86)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 14</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(87)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 15</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-		  		  	</div>
-		   			<div class="disp col-md-2">
-		    				<ul class="nobullets">
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(88)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 16</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(89)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 17</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    					<div>
-		    						<a href="#" class="btn btn-link" onclick="productie(90)"><img class="small" src="red.png"/></a>
-		    						<p><b>Red Triangle 18</b></p>
-		    						<p>New Item $400</p>
-		    					</div>	
-		    				</ul>
-		   			</div>
-		   		</div>		   			
-		   		<div id="yellow" style='display:none;'>
-		       	    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(91)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 1</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(92)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 2</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(93)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 3</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>
-				    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(94)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 4</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(95)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 5</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(96)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 6</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>
-				    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(97)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 7</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(98)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 8</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(99)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 9</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>
-				    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(100)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 10</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(101)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 11</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(102)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 12</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>
-				    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(103)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 13</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(104)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 14</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(105)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 15</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>
-				    <div class="disp col-md-2">
-		    			<ul class="nobullets">
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(106)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 16</b></p>
-		   						<p>New Item $400</p>
-		   					</div>	
-		   					<div>
-		   						<a href="#" class="btn btn-link" onclick="productie(107)"><img class="small" src="yellow.png"/></a>
-	    						<p><b>Yellow Triangle 17</b></p>
-	    						<p>New Item $400</p>
-		    				</div>	
-		    				<div>
-		    					<a href="#" class="btn btn-link" onclick="productie(108)"><img class="small" src="yellow.png"/></a>
-		    					<p><b>Yellow Triangle 18</b></p>
-		    					<p>New Item $400</p>
-		   					</div>	
-		   				</ul>
-				    </div>	
-			    </div>	
+			</div>
+			<div class="lefty col-sm-12 col-md-2">
+				<br>
+				<span class="glyphicon glyphicon-plus-sign rotho" onclick="oppent()"></span>
+				<div id="lightbox" class="container">
+					<div class="top">
+						<h3>add video</h3>						
+					</div>
+					<div class="form-group">
+                		<label for="nombre">place url</label>
+               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/...." onclick="yt()">
+            		</div>
+            		<div class="form-group">
+						<label for="option">choose a category</label>
+                		<select class="form-control" name="" id="option">				            
+                    	</select>
+                    	<form>
+						  <input class="form-control" id="input" type=text placeholder="add category...">
+						   <input class="btn button" onclick="myFunction()" value="Add Category"/>
+						</form>   
+					</div>
+					<div class="inl">
+						<a id="#" class="btn button"><p>cancel</p></a>
+						<a id="#" class="btn button" onclick="makebuttons()"><p>add</p></a>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
-<div class="lightt">
-   	<br>
-	<div class="sepp">
-       	<a href="#"><img src="google.png" class="imgy" /><p class="imi"><b>Google+</b></p></a>
-       	<a href="#"><img src="twitter.png" class="imgy"/><p class="imi"><b>Twitter</b></p></a>
-       	<a href="#"><img src="facebook.png" class="imgy"/><p class="imi"><b>Facebook</b></p></a>
-       	<a href="#"><img src="skype.png" class="imgy"/><p class="imi"><b>Skype</b></p></a>
-    </div>
-</div>		
-	
+	<div class="container">
+		<div class="row">
+			<div class="tall container col-md-2 text-right">
+				<ul id="category-container" class="nobullets algn">
+					<br>
+					<li><a class="btn button" onclick="option11()"><p><b>Random</b></p></a></li>
+					<li><a class="btn button" onclick="option22()"><p><b>Exploration</b></p></a></li>
+					<li><a class="btn button" onclick="option33()"><p><b>Science</b></p></a></li>
+				</ul>
+				<button type="button" class="btn btn-link bobe" data-toggle="collapse" data-target="#demo">GENRES</button>
+				<div id="demo" class="collapse">
+					<ul id="category-container" class="nobullets algn">
+					<li><a class="btn button2" onclick="option11()"><p><b>Alternative Rock</b></p></a></li>
+					<li><a class="btn button2" onclick="option22()"><p><b>Ambient</b></p></a></li>
+					<li><a class="btn button2" onclick="option33()"><p><b>classical</b></p></a></li>
+					<li><a class="btn button2" onclick="option11()"><p><b>Dance</b></p></a></li>
+					<li><a class="btn button2" onclick="option22()"><p><b>Disco</b></p></a></li>
+					<li><a class="btn button2" onclick="option33()"><p><b>Dubstep</b></p></a></li>
+					<li><a class="btn button2" onclick="option11()"><p><b>Electro</b></p></a></li>
+					<li><a class="btn button2" onclick="option22()"><p><b>Folk</b></p></a></li>
+					<li><a class="btn button2" onclick="option33()"><p><b>Hardcore Techno</b></p></a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="grayish col-md-10">
+				<div class="row" id="pluscat"  style='display:none;'>
+				   <div>
+			    		<a href="#" class=" btn btn-link" onclick="oppent1()"><img class="small" src="plus.jpg"/></a>
+			    		<p class="texterino" align="center">Add a video</p>
+		    			<p class="subtext" align="center">because it's fun</p>
+				    </div>
+				</div>    			
+				<div class="row" id="random"  style='display:none;'>
+			        <div class="row">
+				    	<div class="col-md-3">
+				    		<a href="#" class=" btn btn-link" onclick="video1()"><img class="small" src="violet.jpg"/></a>
+				   			<p class="texterino" align="center">Domino</p>
+							<p class="subtext" align="center">Jessie J</p>
+				    	</div>	
+				   		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="city.jpg"/></a>
+				   			<p class="texterino" align="center">Going Like</p>
+							<p class="subtext" align="center">DE LA BASSE</p>
+			    		</div>
+			    		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="minita.jpg"/></a>
+				  			<p class="texterino" align="center">Vacant Space</p>
+				   			<p class="subtext" align="center">George Marple</p>
+			    		</div>
+			    		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="dominika.jpg"/></a>
+				   			<p class="texterino" align="center">Something about you</p>
+				   			<p class="subtext" align="center">"Dornik"</p>
+			    		</div>	
+			    	</div>
+			    	<div class="row">
+			    		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="astre1.jpg"/></a>
+				   			<p class="texterino" align="center">Shambala</p>
+				 			<p class="subtext" align="center">Astre</p>
+			    		</div>
+			    		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="rain.jpg"/></a>
+				   			<p class="texterino" align="center">It will rain</p>
+				 			<p class="subtext" align="center">Asgeir music</p>
+			    		</div>
+			    		<div class="col-md-3">
+				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="banana.jpg"/></a>
+				   			<p class="texterino" align="center">Ahora Nosotros Mixtape</p>
+				 			<p class="subtext" align="center">Chancha Via Circuito</p>
+			    		</div>		
+			    		<div class="col-md-3">
+			    			<a href="#" class=" btn btn-link" onclick="oppent1()"><img class="small" src="plus.jpg"/></a>
+			    			<p class="texterino" align="center">Add a video</p>
+				    		<p class="subtext" align="center">because it's fun</p>
+				   		</div>
+				   	</div>			    	
+				</div>
+				<div class="row" id="exploration" style='display:none;'>
+			        <div class="col-md-3 ex">
+				   		<ul class="nobullets">
+				   			<div class="ex1">
+				   				<a href="#" class="btn btn-link"><img class="small" src="video1.png"/></a>
+				   				<p class="texterino">Some Video</p>
+			    				<p class="subtext">Blair witch house</p>
+			    			</div>			    			
+			    			<div class="ex2">
+			    				<a href="#" class="btn btn-link" onclick="oppent2()"><img class="small" src="plus.jpg"/></a>
+				    			<p class="texterino">Add a video</p>
+				    			<p class="subtext">because it's fun</p>
+				    			<div id="lightbox2" class="container">
+									<div class="top">
+										<h3>add video</h3>						
+									</div>
+									<div class="form-group">
+				                		<label for="nombre">place url</label>
+				               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/....">
+				            		</div>
+				            		<div class="inl">
+										<a id="#" class="btn but"><p>cancel</p></a>
+										<a id="#" class="btn but"><p>add</p></a>
+									</div>
+								</div>
+				    		</div>	
+				    	</ul>
+				   	</div>				    	
+				</div>
+				<div class ="row" id="science" style='display:none;'>
+			        <div class="sep col-md-2">
+				  		<ul class="nobullets">
+				   			<div>
+				   				<a href="#" class="btn btn-link" onclick="productie(07)"><img class="small" src="video1.png"/></a>
+			    				<p class="texterino">Some Video</p>
+			    				<p class="subtext">making water</p>
+			    			</div>
+			    			<div>
+				    			<a href="#" class="btn btn-link" onclick="productie(08)"><img class="small" src="video1.png"/></a>
+				    			<p class="texterino">Some Video</p>
+				    			<p class="subtext">how to make lava</p>
+				    		</div>	
+				   			<div>
+				   				<a href="#" class="btn btn-link" onclick="productie(09)"><img class="small" src="video1.png"/></a>
+				   				<p class="texterino">Another Video</p>
+				   				<p class="subtext">testing gravity</p>
+			    			</div>	
+			    			<div>
+			    				<a href="#" class="btn btn-link" onclick="productie(3)"><img class="small" src="plus.jpg"/></a>
+			    				<p class="texterino">Add a video</p>
+				    			<p class="subtext">I know you want to</p>
+				    			<div id="lightbox3" class="container">
+									<div class="top">
+										<h3>add video</h3>						
+									</div>
+									<div class="form-group">
+				                		<label for="nombre">place url</label>
+				               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/....">
+				            		</div>
+				            		<div class="inl">
+										<a id="#" class="btn but"><p>cancel</p></a>
+										<a id="#" class="btn but"><p>add</p></a>
+									</div>
+								</div>	
+				    		</div>	
+				    	</ul>
+				   	</div>				    	
+				</div>				
+			</div>
+		</div>	
+	</div>
+
+
+
+
+
+
 
 
 	<script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
-
