@@ -1,73 +1,18 @@
-function option11(){
-	document.getElementById('random').style.display = 'block';	
-	document.getElementById('exploration').style.display = 'none';
-	document.getElementById('science').style.display = 'none';
-	document.getElementById('pluscat').style.display = 'none';
-}
-function option22(){
-	document.getElementById('random').style.display = 'none';	
-	document.getElementById('exploration').style.display = 'block';
-	document.getElementById('science').style.display = 'none';
-	document.getElementById('pluscat').style.display = 'none';
-}
-function option33(){
-	document.getElementById('random').style.display = 'none';	
-	document.getElementById('exploration').style.display = 'none';
-	document.getElementById('science').style.display = 'block';
-	document.getElementById('pluscat').style.display = 'none';
-}
-function option44(){
-	document.getElementById('random').style.display = 'none';	
-	document.getElementById('exploration').style.display = 'none';
-	document.getElementById('science').style.display = 'none';
-	document.getElementById('pluscat').style.display = 'block';
-}
 
 function oppent(){
-
-	    var lightbox = document.getElementById("lightbox"),
-	        dimmer = document.createElement("div");
-
-	    dimmer.style.width =  window.innerWidth + 'px';
-	    dimmer.style.height = window.innerHeight + 'px';
-	    dimmer.className = 'dimmer';
-
-	    dimmer.onclick = function(){
-	        document.body.removeChild(this);   
-	        lightbox.style.visibility = 'hidden';
-	    }
-
-	    document.body.appendChild(dimmer);
-
-	    lightbox.style.visibility = 'visible';
-	    lightbox.style.top = window.innerHeight/2 - 200 + 'px';
-	    lightbox.style.left = window.innerWidth/2 - 500 + 'px';
-	    return false;
+	$('#myModal').modal('show')
 }
-function oppent1(){
+function makeCategory(form) {
+	var category = form.elements.category.value;
 
-	    var lightbox1 = document.getElementById("lightbox1"),
-	        dimmer = document.createElement("div");
+	makeButton(category)
 
-	    dimmer.style.width =  window.innerWidth + 'px';
-	    dimmer.style.height = window.innerHeight + 'px';
-	    dimmer.className = 'dimmer';
-
-	    dimmer.onclick = function(){
-	        document.body.removeChild(this);   
-	        lightbox1.style.visibility = 'hidden';
-	    }
-
-	    document.body.appendChild(dimmer);
-
-	    lightbox1.style.visibility = 'visible';
-	    lightbox1.style.top = window.innerHeight/2 - 200 + 'px';
-	    lightbox1.style.left = window.innerWidth/2 - 500 + 'px';
-	    return false;
+	$('#myModal').modal('hide')
+	return true;
 }
 function oppent2(){
 
-	    var lightbox2 = document.getElementById("lightbox2"),
+	    var ligh = document.getElementById("lightbox2"),
 	        dimmer = document.createElement("div");
 
 	    dimmer.style.width =  window.innerWidth + 'px';
@@ -76,93 +21,93 @@ function oppent2(){
 
 	    dimmer.onclick = function(){
 	        document.body.removeChild(this);   
-	        lightbox2.style.visibility = 'hidden';
+	        ligh.style.visibility = 'hidden';
 	    }
 
 	    document.body.appendChild(dimmer);
 
-	    lightbox2.style.visibility = 'visible';
-	    lightbox2.style.top = window.innerHeight/2 - 200 + 'px';
-	    lightbox2.style.left = window.innerWidth/2 - 500 + 'px';
+	    ligh.style.visibility = 'visible';
+	    ligh.style.top = window.innerHeight/2 - 200 + 'px';
+	    ligh.style.left = window.innerWidth/2 - 500 + 'px';
 	    return false;
-}
-function oppent3(){
 
-	    var lightbox3 = document.getElementById("lightbox3"),
-	        dimmer = document.createElement("div");
-
-	    dimmer.style.width =  window.innerWidth + 'px';
-	    dimmer.style.height = window.innerHeight + 'px';
-	    dimmer.className = 'dimmer';
-
-	    dimmer.onclick = function(){
-	        document.body.removeChild(this);   
-	        lightbox3.style.visibility = 'hidden';
-	    }
-
-	    document.body.appendChild(dimmer);
-
-	    lightbox3.style.visibility = 'visible';
-	    lightbox3.style.top = window.innerHeight/2 - 200 + 'px';
-	    lightbox3.style.left = window.innerWidth/2 - 500 + 'px';
-	    return false;
-}
-function oppent4(){
-
-	    var lightbox4 = document.getElementById("lightbox4"),
-	        dimmer = document.createElement("div");
-
-	    dimmer.style.width =  window.innerWidth + 'px';
-	    dimmer.style.height = window.innerHeight + 'px';
-	    dimmer.className = 'dimmer';
-
-	    dimmer.onclick = function(){
-	        document.body.removeChild(this);   
-	        lightbox4.style.visibility = 'hidden';
-	    }
-
-	    document.body.appendChild(dimmer);
-
-	    lightbox4.style.visibility = 'visible';
-	    lightbox4.style.top = window.innerHeight/2 - 200 + 'px';
-	    lightbox4.style.left = window.innerWidth/2 - 500 + 'px';
-	    return false;
 }
 
+var cats = ["random", "exploration", "science"];
 
 
-var cats = [];
+ function makeButton(name){
+	var cont = document.getElementById("category-container");
+	var item = document.createElement('li');
+	var link = document.createElement("a");
+	var catname = document.createTextNode(name);
 
-function myFunction(name){
-     var x = document.getElementById("box");
-     cats.push(document.getElementById("input").value);
-
-     function makebuttons(name){
-	 var cont = document.getElementById("category-container");
-	 var item = document.createElement('li');
-	 var link = document.createElement("a");
-	 var catname = document.createTextNode(name);
-	
-
-
-
-	
-	 link.appendChild(catname);
-	 item.appendChild(link);
-	 link.classList.add("btn", "button");
-	 link.setAttribute("onclick", "javascript:option44()");
-	 cont.appendChild(item);	
+	link.appendChild(catname);
+	item.appendChild(link);
+	link.classList.add("btn", "button");
+	link.setAttribute("onclick", "javascript:showCategory('" + name + "')");
+	cont.appendChild(item);	
 }
 
+//var videos = ["https://www.youtube.com/embed/emXEYQg-E1I", "https://www.youtube.com/embed/7wwX12GnhwU"];
+var videos = {
+	"random": ["https://www.youtube.com/embed/emXEYQg-E1I", "https://www.youtube.com/embed/7wwX12GnhwU"],
+	"science": ["https://www.youtube.com/embed/8CLRTa_ocmo", "https://www.youtube.com/embed/0_7QJ81roiA"],
+	"exploration": ["https://www.youtube.com/embed/0yX1z5ecSWw", "https://www.youtube.com/embed/zZLgxLNerBU"],
+
+}
+
+function showCategory(category) {
+	console.log(category);
+	var container = document.getElementById("pluscat");	
+
+	var content = ""
+
+	for(var i = 0;i<videos[category].length;i++){
+		console.log(videos[i]); 
+		content+= "<div class='col-sm-3'><iframe width='100%' src='" + videos[category][i] + "' frameborder='0' allowfullscreen></iframe></div>"
+	}
+
+	container.innerHTML = content;
+
+}
+
+function makeButtons(){
      for(var i = 0;i<cats.length;i++){
-		if (i>=10){break;}
-		makebuttons(cats[i]);		
-
+		makeButton(cats[i]);
 	}
 }
 
 
 
+function input1(form){
+	var value = form.search.value;
+	if (value == "Random"){
+		option11();
+	}
+	else if (value == "random"){
+		option11();
+	}
+	else if (value == "Exploration"){
+		option22();
+	}	
+	else if (value == "exploration"){
+		option22();
+	}
+	else if (value == "Science"){
+		option33();
+	}	
+	else if (value == "science"){
+		option33();	
+	}	
+	else {
+		alert("not abailable");
+	}
+	return false;
+}
 
 
 
+// Init
+
+makeButtons()
