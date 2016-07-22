@@ -5,215 +5,92 @@
     <title>Document</title>
 	<meta name="viweport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="javascript.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<div class="row">
 		<div class="stylish col-md-12">
-			<div class="hidden-xs hidden-sm col-md-4">
-				<br>
-				<img src="logo.png" class="jolli" />
-				<input class="form-control shrk" id="#" type="text" placeholder="search.." onclick="yt()">
-			</div>
-			<div class="hidden-xs hidden-sm col-md-6">
-			    <br>
-				<div class="sep nobullets">
-					<li><a class="btn btn-link boby">Discover</a></li>
-					<li><a class="btn btn-link bob">Random</a></li>
-					<li><a class="btn btn-link bobe">Radios</a></li>
-					<li><a class="btn btn-link bob">Playlists</a></li>
-					<li><a class="btn btn-link bob">Store</a></li>
-					<li><a class="btn btn-link bob">Myspace</a></li>
-					<li><a class="btn btn-link bob">Queue</a></li>
+			<div class="row">
+				<div class="hidden-xs hidden-sm col-md-1">
+					<br>
+					<img src="logo.png" class="jolli" />
 				</div>
-			</div>
-			<div class="lefty col-sm-12 col-md-2">
-				<br>
-				<span class="glyphicon glyphicon-plus-sign rotho" onclick="oppent()"></span>
-				<div id="lightbox" class="container">
-					<div class="top">
-						<h3>add video</h3>						
+				<div class="hidden-xs hidden-sm col-md-2">
+					<br>
+					<form class="form-inline" onsubmit="return input1(this)">	
+						<div class="form-group">
+				    		<input class="form-control shrk" id="search" name="search" type="text" placeholder="Search ..">
+				    	</div>
+				    </form>		
+				</div>
+				<div class="hidden-xs hidden-sm col-md-7">
+			    	<br>
+					<div class="sep nobullets">
+						<li><a class="btn btn-link boby">Discover</a></li>
+						<li><a class="btn btn-link bob">Random</a></li>
+						<li><a class="btn btn-link bobe">Radios</a></li>
+						<li><a class="btn btn-link bob">Playlists</a></li>
+						<li><a class="btn btn-link bob">Store</a></li>
+						<li><a class="btn btn-link bob">Myspace</a></li>
+						<li><a class="btn btn-link bob">Queue</a></li>
 					</div>
-					<div class="form-group">
-                		<label for="nombre">place url</label>
-               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/...." onclick="yt()">
-            		</div>
-            		<div class="form-group">
-						<label for="option">choose a category</label>
-                		<select class="form-control" name="" id="option">				            
-                    	</select>
-                    	<form>
-						  <input class="form-control" id="input" type=text placeholder="add category...">
-						   <input class="btn button" onclick="myFunction()" value="Add Category"/>
-						</form>   
-					</div>
-					<div class="inl">
-						<a id="#" class="btn button"><p>cancel</p></a>
-						<a id="#" class="btn button" onclick="makebuttons()"><p>add</p></a>
-					</div>	
+				</div>
+				<div class="lefty col-sm-12 col-md-2">
+					<br>
+					<a href="#" class="glyphicon glyphicon-plus-sign rotho" onclick="oppent()"></a>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<div class="container">
 		<div class="row">
-			<div class="tall container col-md-2 text-right">
+			<div class="container col-sm-12 col-md-2 text-right">
+				<br />
 				<ul id="category-container" class="nobullets algn">
-					<br>
-					<li><a class="btn button" onclick="option11()"><p><b>Random</b></p></a></li>
-					<li><a class="btn button" onclick="option22()"><p><b>Exploration</b></p></a></li>
-					<li><a class="btn button" onclick="option33()"><p><b>Science</b></p></a></li>
 				</ul>
-				<button type="button" class="btn btn-link bobe" data-toggle="collapse" data-target="#demo">GENRES</button>
-				<div id="demo" class="collapse">
-					<ul id="category-container" class="nobullets algn">
-					<li><a class="btn button2" onclick="option11()"><p><b>Alternative Rock</b></p></a></li>
-					<li><a class="btn button2" onclick="option22()"><p><b>Ambient</b></p></a></li>
-					<li><a class="btn button2" onclick="option33()"><p><b>classical</b></p></a></li>
-					<li><a class="btn button2" onclick="option11()"><p><b>Dance</b></p></a></li>
-					<li><a class="btn button2" onclick="option22()"><p><b>Disco</b></p></a></li>
-					<li><a class="btn button2" onclick="option33()"><p><b>Dubstep</b></p></a></li>
-					<li><a class="btn button2" onclick="option11()"><p><b>Electro</b></p></a></li>
-					<li><a class="btn button2" onclick="option22()"><p><b>Folk</b></p></a></li>
-					<li><a class="btn button2" onclick="option33()"><p><b>Hardcore Techno</b></p></a></li>
-				</ul>
-				</div>
 			</div>
-			<div class="grayish col-md-10">
-				<div class="row" id="pluscat"  style='display:none;'>
-				   <div>
-			    		<a href="#" class=" btn btn-link" onclick="oppent1()"><img class="small" src="plus.jpg"/></a>
-			    		<p class="texterino" align="center">Add a video</p>
-		    			<p class="subtext" align="center">because it's fun</p>
-				    </div>
-				</div>    			
-				<div class="row" id="random"  style='display:none;'>
-			        <div class="row">
-				    	<div class="col-md-3">
-				    		<a href="#" class=" btn btn-link" onclick="video1()"><img class="small" src="violet.jpg"/></a>
-				   			<p class="texterino" align="center">Domino</p>
-							<p class="subtext" align="center">Jessie J</p>
-				    	</div>	
-				   		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="city.jpg"/></a>
-				   			<p class="texterino" align="center">Going Like</p>
-							<p class="subtext" align="center">DE LA BASSE</p>
-			    		</div>
-			    		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="minita.jpg"/></a>
-				  			<p class="texterino" align="center">Vacant Space</p>
-				   			<p class="subtext" align="center">George Marple</p>
-			    		</div>
-			    		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="dominika.jpg"/></a>
-				   			<p class="texterino" align="center">Something about you</p>
-				   			<p class="subtext" align="center">"Dornik"</p>
-			    		</div>	
-			    	</div>
-			    	<div class="row">
-			    		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="astre1.jpg"/></a>
-				   			<p class="texterino" align="center">Shambala</p>
-				 			<p class="subtext" align="center">Astre</p>
-			    		</div>
-			    		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="rain.jpg"/></a>
-				   			<p class="texterino" align="center">It will rain</p>
-				 			<p class="subtext" align="center">Asgeir music</p>
-			    		</div>
-			    		<div class="col-md-3">
-				   			<a href="#" class=" btn btn-link" onclick="video2()"><img class="small" src="banana.jpg"/></a>
-				   			<p class="texterino" align="center">Ahora Nosotros Mixtape</p>
-				 			<p class="subtext" align="center">Chancha Via Circuito</p>
-			    		</div>		
-			    		<div class="col-md-3">
-			    			<a href="#" class=" btn btn-link" onclick="oppent1()"><img class="small" src="plus.jpg"/></a>
-			    			<p class="texterino" align="center">Add a video</p>
-				    		<p class="subtext" align="center">because it's fun</p>
-				   		</div>
-				   	</div>			    	
-				</div>
-				<div class="row" id="exploration" style='display:none;'>
-			        <div class="col-md-3 ex">
-				   		<ul class="nobullets">
-				   			<div class="ex1">
-				   				<a href="#" class="btn btn-link"><img class="small" src="video1.png"/></a>
-				   				<p class="texterino">Some Video</p>
-			    				<p class="subtext">Blair witch house</p>
-			    			</div>			    			
-			    			<div class="ex2">
-			    				<a href="#" class="btn btn-link" onclick="oppent2()"><img class="small" src="plus.jpg"/></a>
-				    			<p class="texterino">Add a video</p>
-				    			<p class="subtext">because it's fun</p>
-				    			<div id="lightbox2" class="container">
-									<div class="top">
-										<h3>add video</h3>						
-									</div>
-									<div class="form-group">
-				                		<label for="nombre">place url</label>
-				               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/....">
-				            		</div>
-				            		<div class="inl">
-										<a id="#" class="btn but"><p>cancel</p></a>
-										<a id="#" class="btn but"><p>add</p></a>
-									</div>
-								</div>
-				    		</div>	
-				    	</ul>
-				   	</div>				    	
-				</div>
-				<div class ="row" id="science" style='display:none;'>
-			        <div class="sep col-md-2">
-				  		<ul class="nobullets">
-				   			<div>
-				   				<a href="#" class="btn btn-link" onclick="productie(07)"><img class="small" src="video1.png"/></a>
-			    				<p class="texterino">Some Video</p>
-			    				<p class="subtext">making water</p>
-			    			</div>
-			    			<div>
-				    			<a href="#" class="btn btn-link" onclick="productie(08)"><img class="small" src="video1.png"/></a>
-				    			<p class="texterino">Some Video</p>
-				    			<p class="subtext">how to make lava</p>
-				    		</div>	
-				   			<div>
-				   				<a href="#" class="btn btn-link" onclick="productie(09)"><img class="small" src="video1.png"/></a>
-				   				<p class="texterino">Another Video</p>
-				   				<p class="subtext">testing gravity</p>
-			    			</div>	
-			    			<div>
-			    				<a href="#" class="btn btn-link" onclick="productie(3)"><img class="small" src="plus.jpg"/></a>
-			    				<p class="texterino">Add a video</p>
-				    			<p class="subtext">I know you want to</p>
-				    			<div id="lightbox3" class="container">
-									<div class="top">
-										<h3>add video</h3>						
-									</div>
-									<div class="form-group">
-				                		<label for="nombre">place url</label>
-				               			<input class="form-control" id="nombre" type="text" placeholder="http://youtube.com/....">
-				            		</div>
-				            		<div class="inl">
-										<a id="#" class="btn but"><p>cancel</p></a>
-										<a id="#" class="btn but"><p>add</p></a>
-									</div>
-								</div>	
-				    		</div>	
-				    	</ul>
-				   	</div>				    	
-				</div>				
+			<div class="grayish col-sm-12 col-md-10">
+				<div class="row" id="pluscat"></div>							
 			</div>
 		</div>	
 	</div>
 
-
-
-
-
-
-
-
+	<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title">Modal title</h4>
+	            </div>
+	            <form name="category" onsubmit="event.preventDefault(); return makeCategory(this)" action="">
+		            <div class="modal-body">
+	                    <div class="form-group">
+	                        <input class="form-control" id="nombre" type="text" placeholder="Place URL..." onclick="yt()">
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="option">Choose a category</label>
+	                        <select class="form-control" name="" id="option" placeholder="Choose a category">
+		    				<option value="">Random</option>
+		                    <option value="">Exploration</option>
+		                    <option value="">Science</option>				            
+		       			</select>
+	                    </div>
+	                    <input class="form-control" name="category" type=text placeholder="add category...">
+		            </div>
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		                <input type="submit" class="btn button" value="Add Category" />
+		            </div>
+	        	</form>
+	        </div>
+	        <!-- /.modal-content -->
+	    </div>
+	    <!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 	<script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
