@@ -24,16 +24,7 @@
 				    </form>		
 				</div>
 				<div class="hidden-xs hidden-sm col-md-7">
-			    	<br>
-					<div class="sep nobullets">
-						<li><a class="btn btn-link boby">Discover</a></li>
-						<li><a class="btn btn-link bob">Random</a></li>
-						<li><a class="btn btn-link bobe">Radios</a></li>
-						<li><a class="btn btn-link bob">Playlists</a></li>
-						<li><a class="btn btn-link bob">Store</a></li>
-						<li><a class="btn btn-link bob">Myspace</a></li>
-						<li><a class="btn btn-link bob">Queue</a></li>
-					</div>
+			    	<h1>Welcome!</h1>
 				</div>
 				<div class="lefty col-sm-12 col-md-2">
 					<br>
@@ -65,11 +56,12 @@
 	            <form name="category" onsubmit="event.preventDefault(); return makeCategory(this)" action="">
 		            <div class="modal-body">
 	                    <div class="form-group">
-	                        <input class="form-control" id="nombre" type="text" placeholder="Place URL..." onclick="yt()">
+	                        <input class="form-control" name="video" type="text" placeholder="Place URL...">
 	                    </div>
 	                    <div class="form-group">
 	                        <label for="option">Choose a category</label>
 	                        <select class="form-control" name="" id="option" placeholder="Choose a category">
+	                        <option selected="selected">New</option>
 		    				<option value="">Random</option>
 		                    <option value="">Exploration</option>
 		                    <option value="">Science</option>				            
