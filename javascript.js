@@ -116,6 +116,23 @@ function makeButtons(){
 	}
 }
 
+function discover() {
+    window.open("https://www.youtube.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function randomize() {
+    window.open("http://randomyoutube.net/watch", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function radios() {
+    window.open("http://www.radioarg.com/", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+function playlist() {
+    window.open("https://www.youtube.com/watch?v=kOkQ4T5WO9E&list=PLMC9KNkIncKtsacKpgMb0CVq43W80FKvo", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+}
+
+
+
+
+
 
 
 // Init
