@@ -26,13 +26,10 @@
 				<div class="hidden-xs hidden-sm col-md-7">
 			    	<br>
 					<div class="sep nobullets">
-						<li><a class="btn btn-link boby">Discover</a></li>
-						<li><a class="btn btn-link bob">Random</a></li>
-						<li><a class="btn btn-link bobe">Radios</a></li>
-						<li><a class="btn btn-link bob">Playlists</a></li>
-						<li><a class="btn btn-link bob">Store</a></li>
-						<li><a class="btn btn-link bob">Myspace</a></li>
-						<li><a class="btn btn-link bob">Queue</a></li>
+						<a class="btn btn-link boby" onclick="discover()">Discover</a>
+						<a class="btn btn-link bob" onclick="randomize()">Random</a>
+						<a class="btn btn-link bobe" onclick="radios()">Radios</a>
+						<a class="btn btn-link bob" onclick="playlist()">Playlists</a>
 					</div>
 				</div>
 				<div class="lefty col-sm-12 col-md-2">
@@ -72,7 +69,7 @@
 			       			</select>
 	                    </div>
 	                    <div>
-	                    	<input id="new" class="form-control" name="category" type=text placeholder="add category...">
+	                    	<input id="new" class="form-control" name="category" type=text placeholder="add category... 'empty to use an existing cat'">
 	                    </div>
 		            </div>
 		            <div class="modal-footer">
