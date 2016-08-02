@@ -15,15 +15,18 @@
 					<br>
 					<img src="logo.png" class="jolli" />
 				</div>
-				<div class="hidden-xs hidden-sm col-md-2">
+				<div class="hidden-xs hidden-sm col-md-4">
 					<br>
-					<form class="form-inline" onsubmit="return input1(this)">	
-						<div class="form-group">
-				    		<input class="form-control shrk" id="search" name="search" type="text" placeholder="Search ..">
-				    	</div>
-				    </form>		
+					<form action="http://www.youtube.com/results" method="get" target="_blank" >
+						<input  class="shrk" name="search_query" type="text" placeholder="Search.." />
+						<select class="shrk1" name="search_type">
+						<option value="">Videos</option>
+						<option value="search_users">Channels</option>
+						</select>
+						<a class="btn button"><span class="glyphicon glyphicon-search"></span></a>
+					</form>	
 				</div>
-				<div class="hidden-xs hidden-sm col-md-7">
+				<div class="hidden-xs hidden-sm col-md-5">
 			    	<br>
 					<div class="sep nobullets">
 						<a class="btn btn-link boby" onclick="discover()">Discover</a>
