@@ -141,10 +141,13 @@ body{
     color: #FFFFFF; 
 }
 .shrk{
-    float: right;
-    width: 160px;
-    background-color: #15141a;
-    border-color: #15141a;
+  color: #a1a19f;
+  width: 160px;
+  background-color: #15141a;
+}
+.shrk1{
+  color: #a1a19f;
+  background-color: #15141a;
 }
 .jolli {
     height: 40px;
