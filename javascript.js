@@ -1,5 +1,5 @@
 var videos = {
-	"random": ["emXEYQg-E1I", "7wwX12GnhwU", "HL0ivzoaQ9c", "riYJmDyl1qI", "PgLkQbXeZIE", "LrelRFQisYY", "ESVpxIzyMFc"],
+	"random": ["emXEYQg-E1I", "7wwX12GnhwU", "HL0ivzoaQ9c", "riYJmDyl1qI", "PgLkQbXeZIE", "LrelRFQisYY", "ESVpxIzyMFc, ZE70DsyuXTE"],
 	"science": ["8CLRTa_ocmo", "N5r9CJ_MJBc", "xbuvcQrAOSk", "Sl0BHueSjvA", "hkh1fv5QgkM", "E2Tb6o9j1oc", "0_7QJ81roiA"],
 	"exploration": ["0yX1z5ecSWw", "zZLgxLNerBU", "eWwB25WktNE", "0sEBVnuE4qQ", "VweqwHIhEVQ", "QP18xjmODU4", "q5WNu22zg80"],
 	
